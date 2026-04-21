@@ -1,5 +1,7 @@
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude%20AI-orange?logo=anthropic&logoColor=white)](https://claude.ai/code)
 
+📋 **[本月最新羽球條目記錄 →](logs/latest.md)**
+
 # 中文維基百科羽球條目監測機器人
 
 自動監測中文維基百科新頁面 RSS，當出現羽球相關條目時，即時發送 Email 通知並歸檔留存。
@@ -93,6 +95,7 @@ on:
 | 檔案 | 用途 |
 |------|------|
 | `history.txt` | 已抓取過的 URL 列表（去重用，由 CI 自動 commit） |
+| `logs/YYYY-MM.md` | 按月份歸檔的 Markdown 紀錄（由 CI 自動 commit） |
 | `logs/YYYY-MM.md` | 按月份歸檔的 Markdown 紀錄（由 CI 自動 commit） |
 
 ## 相依套件
