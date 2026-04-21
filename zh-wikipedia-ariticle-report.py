@@ -52,6 +52,12 @@ def append_to_monthly_log(entries, dt):
             f.write(f"- [{title}]({url})\n")
         f.write("\n")
 
+    latest_path = os.path.join(LOG_DIR, "latest.md")
+    month_label = dt.strftime('%Y年%m月')
+    month_file = dt.strftime('%Y-%m') + ".md"
+    with open(latest_path, "w", encoding="utf-8") as lf:
+        lf.write(f"# 最新月份記錄\n\n最新記錄：**[{month_label} →]({month_file})**\n")
+
 def send_email(subject, body):
     if not EMAIL_FROM or not EMAIL_TO or not SMTP_PASSWORD:
         print("未設定 EMAIL_FROM、EMAIL_TO 或 SMTP_PASSWORD，略過發信。")
