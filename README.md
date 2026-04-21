@@ -1,4 +1,5 @@
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude%20AI-orange?logo=anthropic&logoColor=white)](https://claude.ai/code)
+[![Built with Gemini](https://img.shields.io/badge/Built%20with-Gemini%20AI-blue?logo=google-gemini&logoColor=white)](https://gemini.google.com/)
 
 📋 **[本月最新羽球條目記錄 →](logs/latest.md)**
 
